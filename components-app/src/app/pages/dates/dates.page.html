@@ -1,0 +1,30 @@
+<app-header title="Datas"></app-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>MMMM</ion-label>
+    <ion-datetime displayFormat="MMMM" [value]="now" ></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label> Data Simples</ion-label>
+    <ion-datetime displayFormat="DD/MM/YYYY"
+                  placeholder="Data"
+                  cancelText="Cancelar"
+                  doneText="Ok"
+                  [ngModel]="now.toISOString()"
+                  (ionChange)="changeDate($event)"></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label> Intervalo</ion-label>
+    <ion-datetime displayFormat="DD/MM/YYYY"
+                  placeholder="Data"
+                  cancelText="Cancelar"
+                  doneText="Ok"
+                  [ngModel]="now.toISOString()"
+                  min="2015-01-01"
+                  max="2020-01-01"
+                  (ionChange)="changeDate($event)"></ion-datetime>
+  </ion-item>
+</ion-content>

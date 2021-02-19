@@ -9,6 +9,22 @@ const routes: Routes = [
     path: 'action-sheet',
     loadChildren: () => import('./pages/action-sheet/action-sheet.module').then( m => m.ActionSheetPageModule)
   },
+  {
+    path: 'cards',
+    loadChildren: () => import('./pages/cards/cards.module').then( m => m.CardsPageModule)
+  },
+  {
+    path: 'dates',
+    loadChildren: () => import('./pages/dates/dates.module').then( m => m.DatesPageModule)
+  },
+  {
+    path: 'grids',
+    loadChildren: () => import('./pages/grids/grids.module').then( m => m.GridsPageModule)
+  },
+  {
+    path: 'inputs',
+    loadChildren: () => import('./pages/inputs/inputs.module').then( m => m.InputsPageModule)
+  },
 ];
 
 @NgModule({

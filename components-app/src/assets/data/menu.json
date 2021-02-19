@@ -1,0 +1,32 @@
+[
+  {
+    "icon": "alert-circle-outline",
+    "name": "Alertas",
+    "link": "/alert"
+  },
+  {
+    "icon": "layers-outline",
+    "name": "Abas",
+    "link": "/action-sheet"
+  },
+  {
+    "icon": "id-card-outline",
+    "name": "Cards",
+    "link": "/cards"
+  },
+  {
+    "icon": "calendar-number-outline",
+    "name": "Datas",
+    "link": "/dates"
+  },
+  {
+    "icon": "grid-outline",
+    "name": "Grids",
+    "link": "/grids"
+  },
+  {
+    "icon": "arrow-up-outline",
+    "name": "Inputs",
+    "link": "/inputs"
+  }
+]

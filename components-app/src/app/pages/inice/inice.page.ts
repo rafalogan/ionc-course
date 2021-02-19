@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { MenuController } from "@ionic/angular";
+
 import { ComponentItem } from "../../components/component.model";
 
 @Component({
@@ -11,22 +13,14 @@ export class InicePage implements OnInit {
 
   components: ComponentItem[]
 
-  constructor() {
-    this.components = [
-      {
-        icon: 'alert-circle-outline',
-        name: 'Alertas',
-        link: '/alert'
-      },
-      {
-        icon: 'layers-outline',
-        name: 'Abas',
-        link: '/action-sheet'
-      }
-    ]
+  constructor(private menuController: MenuController) {
+    this.components = []
   }
 
   ngOnInit() {
   }
 
+  toggleMenu() {
+    this.menuController.toggle();
+  }
 }
