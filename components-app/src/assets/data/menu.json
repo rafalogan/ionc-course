@@ -28,5 +28,15 @@
     "icon": "arrow-up-outline",
     "name": "Inputs",
     "link": "/inputs"
+  },
+  {
+    "icon": "albums-outline",
+    "name": "Slides",
+    "link": "/slides"
+  },
+  {
+    "icon": "notifications-outline",
+    "name": "toast",
+    "link": "/toast"
   }
 ]

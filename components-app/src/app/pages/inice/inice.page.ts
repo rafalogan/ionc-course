@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from "rxjs";
 
 import { MenuController } from "@ionic/angular";
 
+import { DataService } from "../../services/data.service";
 import { ComponentItem } from "../../components/component.model";
 
 @Component({
@@ -11,13 +13,13 @@ import { ComponentItem } from "../../components/component.model";
 })
 export class InicePage implements OnInit {
 
-  components: ComponentItem[]
+  components: Observable<ComponentItem[]>
 
-  constructor(private menuController: MenuController) {
-    this.components = []
-  }
+  constructor(private menuController: MenuController,
+              private dataService: DataService) {}
 
   ngOnInit() {
+    this.components = this.dataService.getMenu();
   }
 
   toggleMenu() {

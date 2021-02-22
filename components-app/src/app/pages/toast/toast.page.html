@@ -1,0 +1,13 @@
+<app-header [title]="title"></app-header>
+
+<ion-content padding>
+  <ion-button expand="full" (click)="presentToast()">
+    <ion-icon slot="start" name="alert-outline"></ion-icon>
+    <ion-label>Present</ion-label>
+  </ion-button>
+
+  <ion-button expand="full" (click)="presentToastWithOptions()">
+    <ion-icon slot="start" name="options-outline"></ion-icon>
+    <ion-label>Present With Options</ion-label>
+  </ion-button>
+</ion-content>
